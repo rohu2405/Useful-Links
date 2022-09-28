@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Baisc App</string>
+    <string name="useful_links">Useful Links</string>
+    <string name="stackoverflow">StackOverFlow</string>
+    <string name="geeks_for_geeks">Geeks for Geeks</string>
+    <string name="linkedin">LinkedIn</string>
+    <string name="s_a_t_i">S.A.T.I.</string>
+    <string name="sati">SATI</string>
+    <string name="indeed">Indeed</string>
+    <string name="welcome">Welcome :)</string>
+    <string name="click_here">Click Here</string>
+    <string name="hackerrank">HackerRank</string>
+    <string name="swayam_nptel">Swayam (NPTEL)</string>
+    <string name="mit_opencourseware">MIT OpenCourseWare</string>
+    <string name="todo">TODO</string>
+</resources>
