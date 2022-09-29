@@ -2,21 +2,27 @@ package com.jr.baiscapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 public class Webpage extends AppCompatActivity {
 
+    @SuppressLint("SetJavaScriptEnabled")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_webpage);
-        WebView webView = findViewById(R.id.webview1);
-        webView.loadUrl("https://stackoverflow.com/");
-        webView.getSettings().setJavaScriptEnabled(true);
-        webView.setWebViewClient(new WebViewClient());
+        Intent intent = getIntent();
+        String website = intent.getExtras().getString("website");
+        WebView browser = findViewById(R.id.webview1);
+        browser.getSettings().setJavaScriptEnabled(true);
+        browser.getSettings().setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK);
+        browser.getSettings().setBlockNetworkImage(false);
+        browser.loadUrl(website);
 
 
 

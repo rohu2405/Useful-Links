@@ -19,18 +19,27 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void Stack(View view) {
-        Intent intent = new Intent(MainActivity.this , Webpage.class);
-        startActivity(intent);
+        Intent i = new Intent(MainActivity.this,Webpage.class);
+        i.putExtra("website", "https://stackoverflow.com/");
+        startActivity(i);
 
     }
 
     public void Geek(View view) {
-        Intent intent = new Intent(MainActivity.this , Webpage2.class);
-        startActivity(intent);
+//        Intent intent = new Intent(MainActivity.this , Webpage2.class);
+//        startActivity(intent);
+        Intent i = new Intent(MainActivity.this,Webpage.class);
+        i.putExtra("website", "https://www.geeksforgeeks.org/");
+        startActivity(i);
     }
 //
     public void Mit(View view) {
-        Intent intent = new Intent(MainActivity.this , Webpage3.class);
-        startActivity(intent);
+//        Intent intent = new Intent(MainActivity.this , Webpage3.class);
+//        startActivity(intent);
+
+        Intent i = new Intent(MainActivity.this,Webpage.class);
+        i.putExtra("website", "https://ocw.mit.edu/");
+        startActivity(i);
+
     }
 }
